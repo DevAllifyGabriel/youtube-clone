@@ -1,0 +1,58 @@
+.gridPai {
+    width: 100%;
+    background: #f9f9f9;
+    .Gridfilho{
+        width: 95%;
+        display: grid;
+        margin-top: 10px;
+        .gridTest{
+            display: grid;
+            width: 100%;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 5px 15px;
+            margin-left: 30px;
+            .fuck{
+                color: #000;
+                margin-top: 40px;
+                cursor: pointer;
+                .thumbnail {
+                    width: 100%;
+                    object-fit: cover;
+                    height: 140px;
+                }
+                .video-info{
+                    padding-top: 10px;
+                    display: grid;
+                    grid-template-columns: 45px 1fr;
+                    .video-user{
+                        width: 35px;
+                        height: 35px;
+                        object-fit: cover;
+                        border-radius: 50px;
+                    }
+                    .video-description{
+                        .video-views{
+                            line-height: 2.1;
+                            font-size: 14px;
+                            color: gray;
+                        }
+                        .video-title {
+                            font-size: 16px;
+                            font-weight: 400;
+                            max-height: 4rem;
+                            overflow: hidden;
+                            display: block;
+                            -webkit-line-clamp: 2;
+                            display: box;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            text-overflow: ellipsis;
+                            white-space: normal;
+                        }
+                    }
+                }
+            }
+        }
+    }
+        
+}

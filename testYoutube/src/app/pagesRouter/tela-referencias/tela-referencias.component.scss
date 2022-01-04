@@ -1,0 +1,33 @@
+.videos_For{
+    width: 30%;
+    position: absolute;
+    .video-info{
+
+        .videos_thumbnail{
+            width: 190px;
+            height: 100px;
+            object-fit: cover;
+        }
+        .video-description{
+            margin-left: 200px;
+            margin-top: -100px;
+            margin-bottom: 30px;
+         .video-title{
+            overflow: hidden;
+            display: block;
+            -webkit-line-clamp: 2;
+            display: box;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
+            white-space: normal;
+         }  
+         .videos_userName{
+             margin-top: -15px;
+         } 
+         .video-views{
+             margin-top: -20px;
+         }
+        }
+    }
+}

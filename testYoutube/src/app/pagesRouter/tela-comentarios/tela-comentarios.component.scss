@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.comentariosTela{
+    padding-top: 70px;
+    margin-left: 40px;
+    font-family: 'Roboto', sans-serif;
+    width: 62.2%;
+
+    .comentarioPrincipál{
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .excluirComentario{
+        float: right;
+        margin-right: 160px;
+        background: #dfdcdc;
+        border-radius: 25px;
+        &:hover{
+            background: rgb(208, 208, 221);
+        }
+    }
+}

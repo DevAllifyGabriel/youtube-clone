@@ -1,0 +1,9 @@
+
+<app-food-add></app-food-add>
+
+<div class="comentariosTela"> 
+    <p class="comentarioPrincipál" (keyup.enter)="foodListDelet(comentar.id)" *ngFor="let comentar of foodComentario">{{comentar.comentar}}
+        <img class="excluirComentario" src="../../../assets/bx-dots-vertical-rounded.svg"  (click)="foodListDelet(comentar.id)" alt="Excluir">
+    </p>    
+</div>
+

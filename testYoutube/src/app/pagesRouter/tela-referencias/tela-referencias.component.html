@@ -1,0 +1,20 @@
+<div class="videos_For">
+  <section
+    class="fuck"
+    *ngFor="let filme of videos"
+    routerLink="/video/{{ filme.id }}"
+  >
+    <div class="video-info">
+      <img
+        class="videos_thumbnail"
+        [src]="filme.thumbnail"
+        [alt]="filme.thumbnail"
+      />
+      <div class="video-description">
+        <p class="video-title">{{ filme.title }}</p>
+        <p class="videos_userName">{{ filme.userName }}</p>
+        <p class="video-views">{{ filme.views }} mil visualizações</p>
+      </div>
+    </div>
+  </section>
+</div>

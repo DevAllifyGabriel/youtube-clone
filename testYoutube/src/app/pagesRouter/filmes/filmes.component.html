@@ -1,0 +1,28 @@
+<div class="gridPai">
+  <div class="Gridfilho">
+    <div class="gridTest">
+      <section
+        class="fuck"
+        *ngFor="let filme of filmes"
+        routerLink="/video/{{ filme.id }}"
+      >
+        <img
+          class="thumbnail"
+          [src]="filme.thumbnail"
+          [alt]="filme.thumbnail"
+        />
+        <div class="video-info">
+          <img
+            class="video-user"
+            [src]="filme.userAvatar"
+            [alt]="filme.userAvatar"
+          />
+          <div class="video-description">
+            <p class="video-title">{{ filme.title }}</p>
+            <p class="video-views">{{ filme.views }} mil visualizações</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>

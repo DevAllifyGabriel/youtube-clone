@@ -1,0 +1,109 @@
+<div class="telaprincp">
+  <div class="navbar">
+    <div class="youTop">
+      <div class="logoPrinc">
+        <img class="logoPrime" src="../../assets/bx-menu.svg" alt="hamburgue" />
+        <img
+          class="logoPrim"
+          routerLink="/inicio"
+          src="../../assets/youtube-logo-5-2.png"
+          alt="logo"
+        />
+        <h1 class="h1Test" routerLink="/inicio">YouTube asdasdas</h1>
+        <!--  <div class="spanP">
+                    <span class="brTeste">BR</span>
+                    </div>  -->
+
+        <div class="pesquisar">
+          <input id="pesquisaTest" type="text" placeholder="Pesquisar" />
+          <img
+            class="pesquisaTestKeybork"
+            src="../../assets/icons8-keyboard.png"
+            alt="keyboard"
+          />
+          <img
+            class="search"
+            src="../../assets/search-regular-24.png"
+            alt="search"
+          />
+          <img
+            class="microphone"
+            src="../../assets/bx-microphone.svg"
+            alt="bx-microphone"
+          />
+          <img class="menu" src="../../assets/bxs-grid.svg" alt="menu" />
+          <img
+            class="rounded"
+            src="../../assets/bx-dots-vertical-rounded.svg"
+            alt="rounded"
+          />
+
+          <div id="login">
+            <img class="circle" src="../../assets/bx-user-circle.svg" alt="" />
+            <p routerLink="/loginCadastro" class="loginSpan">Fazer Login</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="telaVideoPrincp">
+    <div class="telaTest videoWrapper">
+      <iframe
+        src="https://www.youtube.com/embed/m7d7v6mafyU?autoplay=1"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <div class="video_description">
+      <div class="vides_informations">
+        <h3 class="videos_title">{{ info.title }}</h3>
+        <h6 class="videos_info">
+          {{ info.views }} mil visualizações •
+          {{ info.createdAt | date: "MMMM d, y" }}
+        </h6>
+
+        <div class="videos_likes_deslikes">
+          <div class="videos_like">
+            <img src="../../../assets/like-regular-24.png" alt="" />
+            <p class="videos_P">{{ info.likeCount }} mil</p>
+          </div>
+          <div class="videos_deslike">
+            <img src="../../../assets/bx-dislike.svg" alt="" />
+            <p class="videos_P">{{ info.unlikeCount }} mil</p>
+          </div>
+
+          <div class="videos_compartilhar">
+            <h3>compartilha</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="videos_perfilYou">
+        <div class="vide_porflile">
+          <img class="videos_user" [src]="info.userAvatar" alt="" />
+          <h4 class="videos_userName">{{ info.userName }}</h4>
+          <h6 class="videos_subscribers">{{ info.subscribers }} mil</h6>
+        </div>
+
+        <div class="videos_inscrito">
+          <button class="videos_button" (click)="incrito()">INSCRITO</button>
+          <div class="videos_imgRight">
+            <img class="test" src="../../../assets/bx-bellSino.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="videos_Relacionados">
+  <app-tela-referencias></app-tela-referencias>
+</div>
+
+<div class="videos_Comentarios">
+  <app-tela-comentarios></app-tela-comentarios>
+</div>
